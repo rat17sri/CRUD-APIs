@@ -1,0 +1,38 @@
+{
+  "name": "crud-apis",
+  "version": "1.0.0",
+  "description": "Simple CRUD APIs using in-memory database.",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon app.js",
+    "start:prod": "npm run build && npm run start",
+    "start": "node server.js",
+    "build": "",
+    "start:multi": "node cluster.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rat17sri/CRUD-APIs.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Ratnesh Srivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rat17sri/CRUD-APIs/issues"
+  },
+  "homepage": "https://github.com/rat17sri/CRUD-APIs#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "redis": "^4.6.12",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
